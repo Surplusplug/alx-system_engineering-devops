@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+PING=`ping -c 1 "$@" | grep bytes | wc -l` 
+
+for ip in "$@"; do "${PING}" ;
+    if [[ "$PING" -gt 1 ]];then 
+        echo "L'address ${ip} ping"
+    else
+        echo "L'adresse ${ip} ne ping pas"
+    fi
+done
