@@ -2,5 +2,5 @@
 # Display a list of currently running processes
 echo "Displaying all running processes in a user-friendly format with process hierarchy:"
 
-# The 'ps' command with options to show all processes, user-oriented format, and process hierarchy
-ps -ef --forest
+# The 'ps' command with options to show user-oriented format, process hierarchy, and required columns
+ps -eo uid,comm --forest
