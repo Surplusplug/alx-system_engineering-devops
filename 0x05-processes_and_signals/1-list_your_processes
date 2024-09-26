@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Display a list of currently running processes
-echo "Displaying all running processes in a user-friendly format with process hierarchy:"
+echo "Displaying with hierarchy:"
 
-# The 'ps' command with options to show user-oriented format, process hierarchy, and required columns
-ps -eo uid,comm --forest
+# Use 'ps' to display the UID in a minimal format
+ps -eo uid --forest
